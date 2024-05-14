@@ -1,8 +1,8 @@
 @echo off
 
 rem preprocess first - catches errors quicker
-call mvn -f pom-preprocess.xml generate-resources
-if errorlevel 1 goto error
+REM call mvn -f pom-preprocess.xml generate-resources
+REM if errorlevel 1 goto error
 
 rem convert to XSLT - takes forever
 call mvn -f pom-xslt.xml process-resources

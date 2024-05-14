@@ -31,6 +31,9 @@
         <artifactId>license-maven-plugin</artifactId>
         <configuration>
           <header>templates/license-template.txt</header>
+          <includes>
+            <include>factur-x/xslt/*.xslt</include>
+          </includes>
           <excludes>
             <exclude>**/.git*</exclude>
             <exclude>**/LICENSE</exclude>

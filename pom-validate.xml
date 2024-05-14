@@ -40,9 +40,22 @@
             <configuration>
               <xmlDirectory>cii/examples</xmlDirectory>
               <schematronProcessingEngine>XSLT</schematronProcessingEngine>
-              <schematronFile>cii/xslt/EN16931-CII-validation.xslt</schematronFile>
+              <schematronFile>factur-x/xslt/EN16931-CII-validation.xslt</schematronFile>
             </configuration>
           </execution>
+          <!--
+          <execution>
+            <id>cii</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>validate</goal>
+            </goals>
+            <configuration>
+              <xmlDirectory>cii/examples</xmlDirectory>
+              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronFile>cii/xslt/EN16931-CII-validation.xslt</schematronFile>
+            </configuration>
+          </execution>               
           <execution>
             <id>edifact</id>
             <phase>validate</phase>
@@ -67,6 +80,7 @@
               <schematronFile>ubl/xslt/EN16931-UBL-validation.xslt</schematronFile>
             </configuration>
           </execution>
+          -->
         </executions>
       </plugin>
     </plugins>
